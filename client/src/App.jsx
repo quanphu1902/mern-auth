@@ -9,7 +9,8 @@ import Header from './components/Header';
 export default function App() {
   return (
     <BrowserRouter>
-    <Header>
+      {/* header */}
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -17,7 +18,6 @@ export default function App() {
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/profile' element={<Profile />} />
       </Routes>
-      </Header>
     </BrowserRouter>
   );
 }
